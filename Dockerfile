@@ -7,3 +7,4 @@ COPY ./src/server_config /etc/nginx/sites-available/
 COPY ./src/script.sh /root
 COPY ./src/phpMyAdmin-4.9.2-all-languages.tar.gz /root
 COPY ./src/wordpress.sql /root
+COPY ./src/config.inc.php /root
