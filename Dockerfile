@@ -6,3 +6,4 @@ COPY ./src/wordpress-5.3.1.tar.gz /var/www/localhost/
 COPY ./src/server_config /etc/nginx/sites-available/
 COPY ./src/script.sh /root
 COPY ./src/phpMyAdmin-4.9.2-all-languages.tar.gz /root
+COPY ./src/atomes.sql /root
