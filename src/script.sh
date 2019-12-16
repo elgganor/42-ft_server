@@ -16,8 +16,8 @@ service php7.3-fpm start
 service mysql start
 
 #configuration de mysql
-echo "CREATE DATABASE wordpress;" | mysql -u root
-echo "GRANT ALL ON wordpress.* TO 'root'@'localhost' IDENTIFIED BY 'root' WITH GRANT OPTION;" | mysql -u root
-echo "FLUSH PRIVILEGES;" | mysql -u root --password=root
-mysql wordpress -u root --password=root < /root/wordpress.sql
-service mysql restart
+#echo "CREATE DATABASE wordpress;" | mysql -u root
+#echo "GRANT ALL ON wordpress.* TO 'root'@'localhost' IDENTIFIED BY 'root' WITH GRANT OPTION;" | mysql -u root
+#echo "FLUSH PRIVILEGES;" | mysql -u root --password=root
+#mysql wordpress -u root --password=root < /root/wordpress.sql
+#service mysql restart
