@@ -2,7 +2,7 @@ server {
 	listen 80 default_server;
 	listen [::]:80 default_server;
 
-	root /var/www/localhost/phpmyadmin;
+	root /var/www/localhost/wordpress;
 	index index.php index.html;
 
 	server_name _;
