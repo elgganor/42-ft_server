@@ -30,7 +30,6 @@ tar zxvf wordpress-5.3.1.tar.gz
 rm -f wordpress-5.3.1.tar.gz
 mv wp-config.php wordpress/
 mv wordpress/ /var/www/localhost/
-#cp -r wordpress/ /var/www/localhost/
 
 #phpmyadmin installation
 tar zxvf phpMyAdmin-4.9.2-all-languages.tar.gz
@@ -40,17 +39,6 @@ mkdir -p phpMyAdmin-4.9.2-all-languages/tmp
 mv phpMyAdmin-4.9.2-all-languages/ /var/www/localhost/phpmyadmin/
 
 #configuration ssl
-# cd /root
-# wget https://github.com/FiloSottile/mkcert/releases/download/v1.1.2/mkcert-v1.1.2-linux-amd64
-# mv mkcert-v1.1.2-linux-amd64 mkcert
-# chmod +x mkcert
-# cp mkcert /usr/local/bin/
-# mkcert -install
-# mkcert localhost
-# mkdir cert
-# mv ./localhost.pem /root/cert/
-# mv ./localhost-key.pem /root/cert/
-
 mkdir ~/mkcert && cd ~/mkcert
 wget https://github.com/FiloSottile/mkcert/releases/download/v1.1.2/mkcert-v1.1.2-linux-amd64
 mv mkcert-v1.1.2-linux-amd64 mkcert && chmod +x mkcert
