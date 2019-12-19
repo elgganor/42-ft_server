@@ -31,8 +31,7 @@ mysql wordpress -u admin --password=admin < /root/wordpress.sql
 #configuration de nginx
 mv nginx.conf /etc/nginx/sites-available
 cd /etc/nginx/sites-enabled
-rm -f default
-ln -s ../sites-available/nginx.conf ./default
+ln -s ../sites-available/nginx.conf ./
 chown -R www-data:www-data /var/www/*
 chmod -R 755 /var/www/*
 
